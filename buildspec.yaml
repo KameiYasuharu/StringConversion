@@ -39,6 +39,6 @@ phases:
 artifacts:
   files:
       # ビルドされたWARファイルを成果物として指定
-      - $CODEBUILD_SRC_DIR/$TARGET_DIR/*.war
-
+      - $TARGET_DIR/*.war
+  discard-paths: yes
   base-directory: $CODEBUILD_SRC_DIR
