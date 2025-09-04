@@ -1,0 +1,22 @@
+{
+      "version": 0.0,
+      "os": "linux",
+      "files": [
+        {
+          "source": "StringConversion/target/", 
+          "destination": "/home/ec2-user/webapps/",
+          "overwrite": true,
+          "fileExistsBehavior": "OVERWRITE"
+        }
+      ],
+      "hooks": [
+        {
+          "BeforeAllowTraffic": {
+            "location": "scripts/start_app.sh",
+            "timeout": 300,
+            "runas": "ec2-user" 
+          }
+        }
+      ]
+    }
+    
