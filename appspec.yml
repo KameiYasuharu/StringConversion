@@ -12,7 +12,7 @@
       "hooks": [
         {
           "BeforeAllowTraffic": {
-            "location": "scripts/start_app.sh",
+            "location": "appspec.sh",
             "timeout": 300,
             "runas": "ec2-user" 
           }
