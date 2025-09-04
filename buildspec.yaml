@@ -27,7 +27,7 @@ phases:
   build:
     commands:  
       # クリーンパッケージコマンドを実行する
-      - $MAVEN_CMD_CLEAN
+      - $MAVEN_CMD_CLEAN -e -X
       # ビルド成果物をローカルリポジトリにインストールする
       - $MAVEN_CMD_INSTALL
       # 依存関係ツリーを確認し、StringConversionに関連する部分を抽出（依存関係検証用）
