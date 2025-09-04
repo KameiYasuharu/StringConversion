@@ -41,7 +41,6 @@ phases:
 artifacts:
   files:
       # ビルドされたWARファイルを成果物として指定
-      - StringConversion/$TARGET_DIR/*.war
-      # プロジェクトのPOMファイルを成果物に含める（必要に応じて）
-      - StringConversion/pom.xml
+      - $CODEBUILD_SRC_DIR/$TARGET_DIR/*.war
+
   base-directory: $CODEBUILD_SRC_DIR
