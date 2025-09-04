@@ -23,7 +23,7 @@ phases:
   pre_build:
     commands:
       # CodeBuildのソースディレクトリから対象プロジェクトのディレクトリに移動
-      - cd $env:CODEBUILD_SRC_DIR/StringConversion
+      - cd $env:CODEBUILD_SRC_DIR
       # pom.xmlの内容を表示
       - cat pom.xml  
         
