@@ -2,9 +2,13 @@ version: 0.2
 
 env:
   git-credential-helper: yes
-  MAVEN_CMD_CLEAN: "mvn clean package -DskipTests"
-  MAVEN_CMD_INSTALL: "mvn install"
-  TARGET_DIR: "target"
+  variables:  
+    MAVEN_CMD_CLEAN: "mvn clean package -DskipTests"
+    MAVEN_CMD_INSTALL: "mvn install"
+    TARGET_DIR: "target"
+
+source:
+  type: CODEPIPELINE
   
 phases:
   install:
@@ -38,12 +42,10 @@ phases:
       - echo "Maven build and install completed"     
   
 artifacts:
+  type: CODEPIPELINE
   files:
       # ビルドされたWARファイルを成果物として指定
       - StringConversion/$TARGET_DIR/*.war
       # プロジェクトのPOMファイルを成果物に含める（必要に応じて）
       - StringConversion/pom.xml
-      # 他に必要な設定ファイルがあれば追加可能
-      - StringConversion/src/main/resources/application.properties
-
   base-directory: $CODEBUILD_SRC_DIR
