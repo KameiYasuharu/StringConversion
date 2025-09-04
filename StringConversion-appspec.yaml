@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  # 1. ビルド成果物（WARファイルなど）をEC2の一時ディレクトリにコピー
+  - source: StringConversion.war
+  - destination: /home/ec2-user/temp/
+  - overwrite: true
+
+hooks:
+  # 2. トラフィック切り替え前に解凍とスクリプト実行を行う（アプリが準備完了するように）
+  - BeforeAllowTraffic:
+      location: StringConversion-appspec.sh
+      timeout: 300
+      runas: ec2-user
+    
