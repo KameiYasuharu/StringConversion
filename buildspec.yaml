@@ -45,5 +45,5 @@ artifacts:
       - StringConversion/pom.xml
       # 他に必要な設定ファイルがあれば追加可能
       - StringConversion/src/main/resources/application.properties
-      # 成果物のベースディレクトリを指定（オプション）
-      base-directory: $CODEBUILD_SRC_DIR
+
+  base-directory: $CODEBUILD_SRC_DIR
