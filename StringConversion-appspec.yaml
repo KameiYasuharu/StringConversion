@@ -9,7 +9,7 @@ files:
 hooks:
   # 2. トラフィック切り替え前に解凍とスクリプト実行を行う（アプリが準備完了するように）
   - BeforeAllowTraffic:
-      location: StringConversion/StringConversion-appspec.sh
+      location: StringConversion-appspec.sh
       timeout: 300
       runas: ec2-user
     
