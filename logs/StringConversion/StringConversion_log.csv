@@ -1,0 +1,51 @@
+[err-instanceId],2025/07/22,14:36:03,506,INFO,Starting StringConverterApplication using Java 17.0.13 on swxdhj103314 with PID 18952 (D:\workspace\StringConversion\target\classes started by pengcheng.xu in D:\workspace\StringConversion)
+[err-instanceId],2025/07/22,14:36:03,507,INFO,No active profile set, falling back to 1 default profile: "default"
+[err-instanceId],2025/07/22,14:36:03,558,INFO,Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[err-instanceId],2025/07/22,14:36:03,558,INFO,For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[err-instanceId],2025/07/22,14:36:04,001,INFO,Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9d3b1856] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[err-instanceId],2025/07/22,14:36:04,024,INFO,Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[err-instanceId],2025/07/22,14:36:04,461,INFO,Tomcat initialized with port(s): 8081 (http)
+[err-instanceId],2025/07/22,14:36:04,469,INFO,Starting service [Tomcat]
+[err-instanceId],2025/07/22,14:36:04,469,INFO,Starting Servlet engine: [Apache Tomcat/9.0.83]
+[err-instanceId],2025/07/22,14:36:04,580,INFO,Initializing Spring embedded WebApplicationContext
+[err-instanceId],2025/07/22,14:36:04,580,INFO,Root WebApplicationContext: initialization completed in 1021 ms
+[err-instanceId],2025/07/22,14:36:04,935,WARN,Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[err-instanceId],2025/07/22,14:36:05,035,WARN,Unable to start LiveReload server
+[err-instanceId],2025/07/22,14:36:05,063,INFO,Tomcat started on port(s): 8081 (http) with context path ''
+[err-instanceId],2025/07/22,14:36:05,068,INFO,Started StringConverterApplication in 6.442 seconds (JVM running for 7.182)
+[err-instanceId],2025/07/22,14:36:14,698,INFO,Initializing Spring DispatcherServlet 'dispatcherServlet'
+[err-instanceId],2025/07/22,14:36:14,698,INFO,Initializing Servlet 'dispatcherServlet'
+[err-instanceId],2025/07/22,14:36:14,699,INFO,Completed initialization in 1 ms
+[err-instanceId],2025/07/22,14:36:14,762,INFO,CALL,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:36:14,763,INFO,START,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:36:14,773,INFO,NORMAL_END,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:36:14,774,INFO,RECEIVE,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:39:14,652,INFO,Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[err-instanceId],2025/07/22,14:39:14,665,INFO,Stopping service [Tomcat]
+[err-instanceId],2025/07/22,14:39:14,666,INFO,Destroying Spring FrameworkServlet 'dispatcherServlet'
+[err-instanceId],2025/07/22,14:39:19,193,INFO,Starting StringConverterApplication using Java 17.0.13 on swxdhj103314 with PID 18952 (D:\workspace\StringConversion\target\classes started by pengcheng.xu in D:\workspace\StringConversion)
+[err-instanceId],2025/07/22,14:39:19,193,INFO,No active profile set, falling back to 1 default profile: "default"
+[err-instanceId],2025/07/22,14:39:19,278,INFO,Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9d3b1856] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[err-instanceId],2025/07/22,14:39:19,279,INFO,Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[err-instanceId],2025/07/22,14:39:19,335,INFO,Tomcat initialized with port(s): 8081 (http)
+[err-instanceId],2025/07/22,14:39:19,335,INFO,Starting service [Tomcat]
+[err-instanceId],2025/07/22,14:39:19,335,INFO,Starting Servlet engine: [Apache Tomcat/9.0.83]
+[err-instanceId],2025/07/22,14:39:19,375,INFO,Initializing Spring embedded WebApplicationContext
+[err-instanceId],2025/07/22,14:39:19,376,INFO,Root WebApplicationContext: initialization completed in 182 ms
+[err-instanceId],2025/07/22,14:39:19,529,WARN,Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+[err-instanceId],2025/07/22,14:39:19,598,WARN,Unable to start LiveReload server
+[err-instanceId],2025/07/22,14:39:19,609,INFO,Tomcat started on port(s): 8081 (http) with context path ''
+[err-instanceId],2025/07/22,14:39:19,613,INFO,Started StringConverterApplication in 4.911 seconds (JVM running for 201.721)
+[err-instanceId],2025/07/22,14:39:19,617,INFO,Condition evaluation unchanged
+[err-instanceId],2025/07/22,14:39:24,107,INFO,Initializing Spring DispatcherServlet 'dispatcherServlet'
+[err-instanceId],2025/07/22,14:39:24,107,INFO,Initializing Servlet 'dispatcherServlet'
+[err-instanceId],2025/07/22,14:39:24,107,INFO,Completed initialization in 0 ms
+[err-instanceId],2025/07/22,14:39:24,116,INFO,START,StringConverterController,convertString
+[err-instanceId],2025/07/22,14:39:24,124,INFO,CALL,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:39:24,124,INFO,START,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:39:24,128,INFO,NORMAL_END,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:39:24,128,INFO,RECEIVE,StringConverterServiceImpl,convertLogic
+[err-instanceId],2025/07/22,14:39:24,128,INFO,NORMAL_END,StringConverterController,convertString
+[err-instanceId],2025/07/22,14:40:09,184,INFO,Application shutdown requested.
+[err-instanceId],2025/07/22,14:40:09,193,INFO,Stopping service [Tomcat]
+[err-instanceId],2025/07/22,14:40:09,194,INFO,Destroying Spring FrameworkServlet 'dispatcherServlet'
