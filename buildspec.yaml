@@ -6,9 +6,6 @@ env:
     MAVEN_CMD_CLEAN: "mvn clean package -DskipTests"
     MAVEN_CMD_INSTALL: "mvn install"
     TARGET_DIR: "target"
-
-source:
-  type: CODEPIPELINE
   
 phases:
   install:
@@ -42,7 +39,6 @@ phases:
       - echo "Maven build and install completed"     
   
 artifacts:
-  type: CODEPIPELINE
   files:
       # ビルドされたWARファイルを成果物として指定
       - StringConversion/$TARGET_DIR/*.war
