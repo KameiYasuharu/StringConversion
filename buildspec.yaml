@@ -40,5 +40,7 @@ artifacts:
   files:
       # ビルドされたWARファイルを成果物として指定
       - $TARGET_DIR/*.war
+      - StringConversion-appspec.yaml
+      - StringConversion-appspec.sh
   discard-paths: yes
   base-directory: $CODEBUILD_SRC_DIR
