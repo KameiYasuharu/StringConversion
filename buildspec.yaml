@@ -1,0 +1,48 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+  MAVEN_CMD_CLEAN: "mvn clean package -DskipTests"
+  MAVEN_CMD_INSTALL: "mvn install"
+  TARGET_DIR: "target"
+phases:
+  install:
+    commands:
+      # mavenをインストールする     
+      - yum install -y maven
+      
+      # MavenとJavaバージョン確認
+      - mvn -version
+      - java -version
+
+  pre_build:
+    commands:
+      # CodeBuildのソースディレクトリから対象プロジェクトのディレクトリに移動
+      - cd $env:CODEBUILD_SRC_DIR/StringConversion
+      # pom.xmlの内容を表示
+      - cat pom.xml  
+        
+  build:
+    commands:  
+      # クリーンパッケージコマンドを実行する
+      - $MAVEN_CMD_CLEAN
+      # ビルド成果物をローカルリポジトリにインストールする
+      - $MAVEN_CMD_INSTALL
+      # 依存関係ツリーを確認し、StringConversionに関連する部分を抽出（依存関係検証用）
+      - mvn dependency:tree | grep "StringConversion" 
+      
+  post_build:
+    commands:
+      # ビルドとインストールが完了したことをログに出力する
+      - echo "Maven build and install completed"     
+  
+artifacts:
+  files:
+      # ビルドされたWARファイルを成果物として指定
+      - StringConversion/$TARGET_DIR/*.war
+      # プロジェクトのPOMファイルを成果物に含める（必要に応じて）
+      - StringConversion/pom.xml
+      # 他に必要な設定ファイルがあれば追加可能
+      # - StringConversion/src/main/resources/application.properties
+      # 成果物のベースディレクトリを指定（オプション）
+      base-directory: $CODEBUILD_SRC_DIR
