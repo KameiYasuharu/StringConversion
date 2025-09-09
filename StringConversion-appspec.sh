@@ -13,5 +13,4 @@ cd /home/ec2-user/webapps/StringConversion
 pkill -f "org.springframework.boot.loader.WarLauncher" || true
     
 # アプリケーションをバックグラウンドで起動
-# nohup java -cp . org.springframework.boot.loader.WarLauncher > app.log 2>&1 &
-nohup java -cp "WEB-INF/classes:WEB-INF/lib/*:." com.example.StringConversionApplication > app.log 2>&1 &
+nohup java -cp . org.springframework.boot.loader.WarLauncher > app.log 2>&1 &
